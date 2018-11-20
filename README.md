@@ -1,5 +1,9 @@
 # MCollective Puppet Agent
 
+> This fork is only updated for security issues and bugs with its use in [Puppet Enterprise](https://puppet.com/products/puppet-enterprise).
+> Please file bugs with [PE support](https://support.puppet.com).
+> For security issues, see [Puppet's product security policy](https://puppet.com/docs/vulnerability-submission-process).
+
 This agent manages the *puppet agent*, unlike the older *puppetd* plugin
 this one supports Puppet 3 and recent changes made to its locking and status files.
 
@@ -20,10 +24,6 @@ To use this agent you need:
 
   * MCollective 2.2.0 at least
   * Puppet 2.7 or later
-
-# TODO
-
-  * Add a new puppet commander
 
 ## Agent Installation
 
@@ -413,10 +413,3 @@ You cannot mix and match white and black lists.
 So to repeat by default this feature is effectively turned off as there is an empty
 whitelist by default - no types are allowed to be managed.  You should think carefully
 before enabling this feature and combine it with the Authorization system when you do
-
-## Maintenance
-
-Maintainers: Alessandro Parisi <alessandro@puppet.com>, Michael Smith
-<michael.smith@puppet.com>, Michal Ruzicka <michal.ruzicka@puppet.com>.
-
-Tickets: File bug tickets at https://tickets.puppet.com/browse/MCOP.
